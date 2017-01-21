@@ -10,7 +10,7 @@ Diskuze na zmíněném portálu není vhodná pro mobilní zařízení s pomalý
 
 # Pravidla
 - :bulb: `:bulb:` Doplnění funkcionality/obsahu
-- :heavy_plus_sign: Přidání souboru
+- :heavy_plus_sign: `:heavy_plus_sign:` Přidání souboru
 - :wrench: `:wrench:` Oprava chyby
 - :package: `:package:` Verze k publikaci
 
