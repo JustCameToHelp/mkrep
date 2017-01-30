@@ -1,4 +1,17 @@
 <?php
+    function KrepUrl($key)
+    {
+        return "http://www.k-report.net/" . $key;
+    }
+
+    function printfln()
+    {
+        $argv = func_get_args();
+        $format = array_shift( $argv );
+        vprintf( $format, $argv );
+        print "<br />";
+    }
+
 	function readUri($s) {
 		// create curl resource
 		$ch = curl_init();
