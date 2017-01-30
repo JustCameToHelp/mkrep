@@ -1,9 +1,15 @@
 <?php
+	include "php/functions.php";
+	include "php/functions-xpath.php";
 
-// Show all information, defaults to INFO_ALL
-phpinfo();
+    //error_reporting(E_ALL);
+    //ini_set('display_errors', 1);
 
-// Show just the module information.
-phpinfo(INFO_MODULES);
+	$startPage = "http://www.k-report.net/cgi-bin/discus/discus.pl";
+	$xpath = loadUriAsXPath($startPage);
 
+    $title = query_first($xpath, "/html/head/title");
+    print $title;
+
+	print "<br/>END.";
 ?>
