@@ -1,23 +1,26 @@
 <?php
-	include "php/functions.php";
-	include "php/functions-xpath.php";
 
-    //error_reporting(E_ALL);
-    //ini_set('display_errors', 1);
+include "php/functions.php";
+include "php/functions-xpath.php";
+include "php/functions-formatting.php";
 
-    $keyquery = $_GET["key"];
-    if($keyquery == NULL)
-    {
-        $keyquery = "cgi-bin/discus/discus.pl";
-    }
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-	$krepUri = KrepUrl($keyquery);
-    printfln("URI: %s", $krepUri);
+$keyquery = @$_GET["key"];
+if($keyquery == NULL)
+{
+    $keyquery = "cgi-bin/discus/discus.pl";
+}
 
-	$xpath = loadUriAsXPath($krepUri);
+$krepUri = KrepUrl($keyquery);
+printfln("URI: %s", $krepUri);
 
-    $title = query_first($xpath, "/html/head/title");
-    printfln($title);
+$xpath = loadUriAsXPath($krepUri);
 
-	print "<hr />";
+$title = query_first($xpath, "/html/head/title");
+printfln($title);
+
+print "<hr />";
+
 ?>

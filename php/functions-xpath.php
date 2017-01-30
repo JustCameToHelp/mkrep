@@ -1,4 +1,5 @@
 <?php
+
 function query_first($xPathObj, $xPathQuery)
 {
 	$domNodeList = $xPathObj->query($xPathQuery);
@@ -31,4 +32,5 @@ function query_childs($xPathObj, $parentNode)
 	}
 	return $result;
 }
+
 ?>
