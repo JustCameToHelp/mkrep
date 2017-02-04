@@ -5,7 +5,12 @@ Popsáno v pseudo-XPath
 ## discus.pl
 - `/html/body/div(obal)/div(obsah)/div(odsazeni)/div(sloupecD)`
   zde je hlavní obsah
-  - `/table(diskuse_nadpis)/tbody/tr/td/h1`
+  - `table(diskuse_nadpis)/tbody/tr/td`
+    nadpis (v `h1`)
+  - `table(class=diskuse_tabulka)/tbody(class=dfdialogy)`
+    seznam diskuzí
+    - `tr/td` 6x
+      šest buněk (ikona, diskusní skupina, posl. autor, příspěvků, stran, datum a čas posl. příspěvku)
 
 ## *.html (???)
 - `/html/body/div(obal)/div(obsah)/div(odsazeni)/div(sloupecD)`
