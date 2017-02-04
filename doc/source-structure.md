@@ -2,6 +2,11 @@
 
 Popsáno v pseudo-XPath
 
+## discus.pl
+- `/html/body/div(obal)/div(obsah)/div(odsazeni)/div(sloupecD)`
+  zde je hlavní obsah
+
+## *.html (???)
 - `/html/body/div(obal)/div(obsah)/div(odsazeni)/div(sloupecD)`
   zde je hlavní obsah
  - `p`
