@@ -10,6 +10,7 @@ Popsáno v pseudo-XPath
   - `table(class=diskuse_tabulka)/tbody(class=dfdialogy)`
     seznam diskuzí
     - `tr/td` 6x
+
       šest buněk (ikona, diskusní skupina, posl. autor, příspěvků, stran, datum a čas posl. příspěvku)
 
 ## *.html (???)
