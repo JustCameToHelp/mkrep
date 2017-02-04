@@ -5,6 +5,7 @@ Popsáno v pseudo-XPath
 ## discus.pl
 - `/html/body/div(obal)/div(obsah)/div(odsazeni)/div(sloupecD)`
   zde je hlavní obsah
+  - `/table(diskuse_nadpis)/tbody/tr/td/h1`
 
 ## *.html (???)
 - `/html/body/div(obal)/div(obsah)/div(odsazeni)/div(sloupecD)`
