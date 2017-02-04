@@ -5,6 +5,11 @@ function KrepUrl($key)
     return "http://www.k-report.net/" . $key;
 }
 
+function w1250toUtf8($strW1250)
+{
+    return iconv('windows-1250','utf-8',$strW1250);
+}
+
 function readUri($s) {
     // create curl resource
     $ch = curl_init();
@@ -20,15 +25,10 @@ function readUri($s) {
     return $output ? $output : NULL;
 }
 
-function w1250toUtf8($strW1250)
-{
-    return iconv('windows-1250','utf-8',$strW1250);
-}
-
 function loadUriAsDomDocument($uri)
 {
     $pageDataRaw = readUri($uri);
-    $pageData = w1250toUtf8($pageDataRaw);
+    $pageData = $pageDataRaw;
 
     $doc = new DOMDocument();
     @$doc->loadHTML($pageData);
